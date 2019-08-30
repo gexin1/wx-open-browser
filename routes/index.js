@@ -14,12 +14,12 @@ router.get("/android-wx", async (ctx, next) => {
     ctx.response.status = 206;
     ctx.body = "";
   } else {
-    await ctx.render("ios-user-guide", {
-      title: "ios用户打开浏览器引导"
-    });
-    // await ctx.render("demo", {
-    //   title: "river test 微信浏览打开默认浏览器"
+    // await ctx.render("ios-user-guide", {
+    //   title: "ios用户打开浏览器引导"
     // });
+    await ctx.render("demo", {
+      title: "river test 微信浏览打开默认浏览器"
+    });
   }
 });
 module.exports = router;
