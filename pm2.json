@@ -1,0 +1,12 @@
+{
+  "name": "wx-open-phone-browser",
+  "script": "./bin/www",
+  "cwd": "./",
+  "watch": false,
+  "ignore_watch": ["node_modules", "logs", "public", "sessions"],
+  "error_file": "./logs/pm2/app-err.log",
+  "out_file": "./logs/pm2/app-out.log",
+  "env": {
+    "NODE_ENV": "production"
+  }
+}
