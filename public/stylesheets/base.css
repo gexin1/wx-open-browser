@@ -16,7 +16,7 @@ button.pulse {
   padding: 0.5em 1em;
   outline: none;
   border: none;
-  background-color: #f72929d1;
+  background-color: hsla(355, 87%, 55%, 1);
 }
 
 button.pulse:hover {
@@ -31,7 +31,7 @@ button.pulse::before {
   bottom: 0;
   left: 0;
   right: 0;
-  border: 4px solid #f72929d1;
+  border: 4px solid hsla(355, 87%, 55%, 1);
   transform-origin: center;
   transform: scale(1);
 }
