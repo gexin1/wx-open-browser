@@ -5,6 +5,7 @@ router.get("/wx", async (ctx, next) => {
   const { "user-agent": userAgent } = ctx.req.headers;
   const browser = new Browser(userAgent);
   const browserType = browser.getType();
+  console.log(browserType);
   switch (browserType) {
     case browser.WX_ANDROID:
       //如果是安卓微信浏览器 就返回一个文件

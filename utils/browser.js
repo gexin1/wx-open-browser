@@ -16,11 +16,11 @@ class Browser {
     const isAndroid = agent => androidReg.test(agent);
     const isIos = agent => iosReg.test(agent);
     while (true) {
-      if (QQ_BrowerReg.test(agent)) {
-        if (isAndroid(agent)) {
-          return QQ_ANDROID;
-        }
-      }
+      //   if (QQ_BrowerReg.test(agent)) {
+      //     if (isAndroid(agent)) {
+      //       return QQ_ANDROID;
+      //     }
+      //   }
       if (WX_BrowerReg.test(agent)) {
         if (isAndroid(agent)) {
           return WX_ANDROID;
