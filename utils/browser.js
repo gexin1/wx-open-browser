@@ -21,7 +21,7 @@ class Browser {
           return QQ_ANDROID;
         }
       }
-      if (!WX_BrowerReg.test(agent)) {
+      if (WX_BrowerReg.test(agent)) {
         if (isAndroid(agent)) {
           return WX_ANDROID;
         }
