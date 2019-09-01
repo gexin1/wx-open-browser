@@ -4,8 +4,9 @@
   "private": true,
   "scripts": {
     "start": "cross-env PORT=3010 NODE_ENV=production pm2 start ./pm2.json",
-    "dev": "cross-env PORT=3010 ./node_modules/.bin/nodemon bin/www",
+    "dev": "cross-env PORT=3010 ./node_modules/.bin/nodemon  --inspect bin/www",
     "prd": "pm2 start bin/www",
+    "test-vs": "cross-env PORT=3010 node --inspect bin/www",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "dependencies": {
