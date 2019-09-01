@@ -1,9 +1,12 @@
 const router = require("koa-router")();
 const send = require("koa-send");
 const path = require("path");
-// 流的方式下载
 router.get("/download", async (ctx, next) => {
-  await send(ctx, path.resolve("/public/assets/test.apk"));
+  const name = "yan-h.jpg";
+  ctx.set({
+    "Content-Disposition": `attachment;filename=${name}`
+  });
+  await send(ctx, path.resolve(`/public/images/${name}`));
 });
 
 module.exports = router;
