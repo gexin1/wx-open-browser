@@ -7,10 +7,13 @@
 ```
 npm i
 ```
-启动项目  
+
+启动项目
+
 ```
 npm run dev
 ```
+
 ### 安卓微信链接自动打开默认浏览器
 
 扫码体验 如果打开失败请提 issue  
@@ -18,7 +21,7 @@ npm run dev
 
 ### 实现方案
 
-1.根据 user-agent 判断当前链接在安卓微信环境,增加响应头，设置状态码为 206 安卓微信就会自动打开默认浏览器
+1.根据 user-agent 判断当前链接在安卓微信环境,增加响应头，设置状态码为 206 安卓微信就会自动打开默认浏览器 [Content-Disposition 传送们](https://developer.mozilla.org/zh-CN/docs/Web/HTTP/Headers/Content-Disposition)
 
 ```
   "Content-Disposition": "attachment;filename=river.apk"
