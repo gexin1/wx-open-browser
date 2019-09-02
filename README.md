@@ -16,7 +16,8 @@ npm run dev
 
 ### 安卓微信链接自动打开默认浏览器
 
-**请使用andorid微信扫码体验** 
+**请使用andorid微信扫码体验**
+<br /> 
 <img width='200' src="http://wx.riverxin.cn/images/qrcode.png" >
 
 ### 实现方案
