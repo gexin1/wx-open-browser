@@ -21,7 +21,7 @@ npm run dev
 
 ### 实现方案
 
-1.根据 user-agent 判断当前链接在安卓微信环境,增加响应头，设置状态码为 206 安卓微信就会自动打开默认浏览器 [Content-Disposition 传送们](https://developer.mozilla.org/zh-CN/docs/Web/HTTP/Headers/Content-Disposition)
+1.根据 user-agent 判断当前链接在安卓微信环境,增加响应头，设置状态码为 206 安卓微信就会自动打开默认浏览器
 
 ```
   "Content-Disposition": "attachment;filename=river.apk"
@@ -39,3 +39,7 @@ Response Headers 如下
 ```
 
 2.  微信自动打开默认浏览器,会重新请求链接我们判断一下 user-agent,我们就可以根据做我们需要的操作了
+
+### 参考文档
+
+[Content-Disposition](https://developer.mozilla.org/zh-CN/docs/Web/HTTP/Headers/Content-Disposition)
