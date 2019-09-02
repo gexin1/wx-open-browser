@@ -8,6 +8,7 @@ const logger = require("koa-logger");
 
 const indexRoute = require("./routes/index");
 const downloadRoute = require("./routes/download");
+const wxRoute = require("./routes/wx");
 // error handler
 onerror(app);
 
@@ -38,6 +39,7 @@ app.use(async (ctx, next) => {
 // routes
 app.use(indexRoute.routes(), indexRoute.allowedMethods());
 app.use(downloadRoute.routes(), downloadRoute.allowedMethods());
+app.use(wxRoute.routes(), wxRoute.allowedMethods());
 
 // error-handling
 app.on("error", (err, ctx) => {

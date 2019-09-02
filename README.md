@@ -2,9 +2,8 @@
 
 ### 安卓微信链接自动打开默认浏览器
 
-扫码体验 如果打开失败请提 issue
-<br>
-<img width='500' src="http://wx.riverxin.cn/images/qrcode.png" >
+扫码体验 如果打开失败请提 issue  
+<img width='200' src="http://wx.riverxin.cn/images/qrcode.png" >
 
 ### 实现方案
 
@@ -14,7 +13,7 @@
   "Content-Disposition": "attachment;filename=river.apk"
 ```
 
-整体接口 header 如下
+Response Headers 如下
 
 ```
    HTTP/1.1 206 Partial Content
