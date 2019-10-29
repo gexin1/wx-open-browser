@@ -1,3 +1,5 @@
+# 此项目已失效
+
 ### wx-open-phone-browser
 
 ### 项目启动
